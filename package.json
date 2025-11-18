@@ -1,0 +1,43 @@
+{
+  "name": "vero_app",
+  "version": "1.0.0",
+  "description": "VERO_App",
+  "license": "ISC",
+  "author": "Abdallah",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "db:push": "npx prisma db push",
+    "studio": "npx prisma studio",
+    "generate": "npx prisma generate"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.2",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "install": "^0.13.0",
+    "joi": "^18.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.20.0",
+    "mongoose": "^8.19.2",
+    "morgan": "^1.10.1",
+    "mysql2": "^3.15.3",
+    "nodemailer": "^7.0.10",
+    "npm": "^11.6.2",
+    "pg": "^8.16.3",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@prisma/client": "^6.18.0",
+    "prisma": "^6.18.0"
+  },
+  "prisma": {
+    "schema": "src/prisma/schema.prisma"
+  }
+}
